@@ -4,6 +4,7 @@ from github import Github
 from helper_classes import MissingRepoNameException
 
 ACCESS_TOKEN = os.environ['GITHUB_ACCESS_TOKEN']
+PROJECT_FOLDER = 'D:\\Code'
 
 g = Github(ACCESS_TOKEN)
 
@@ -23,10 +24,15 @@ else:
     print(f"Repo with name {sys.argv[1]} created!")
 
 # make a README.md
+
 repo.create_file('README.md', "initial commit", f"# {sys.argv[1].title()}")
-print('README CREATED')
+
 
 # cd to the right folder
-# print(f'CURRENT DIR: {os.}')
+
+os.chdir(PROJECT_FOLDER)
+
 # clone the repo
-# initialize a git repo
+# TODO
+# open vscode
+os.system('code .')
