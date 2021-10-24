@@ -2,4 +2,5 @@ A script for automating the steps from creating a new GitHub project and start w
 
 ### TODO:
 
-- make a package
+- dynamically set project folder
+- OS agnostic script
